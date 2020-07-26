@@ -31,14 +31,14 @@ int main(int argc, char *argv[]){
 		boost:split(V, line, boost:is_any_of("\t"));  // parsear linea de entrada al vector V
            
         }
-        filein.close();              // se cierra fichero
+        filein.close();              
     }
     else cout << "Unable to open file";
 
 
     vector<int> vI;
     int x;
-    for (int i=0; i<V.size(); i++){    // convertir a ints
+    for (int i=0; i<V.size(); i++){    
         stringstream str(V.at(i));
         str >> x;
         vI.push_back(x);

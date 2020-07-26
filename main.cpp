@@ -28,7 +28,7 @@ int main(int argc, char *argv[]){
     ifstream filein (argv[1]);        // leer fichero de entrada
     if (filein.is_open()){
         while ( getline (filein,line) ){
-			boost:split(V, line, boost:is_any_of("\t"));  // parsear linea de entrada al vector V
+		boost:split(V, line, boost:is_any_of("\t"));  // parsear linea de entrada al vector V
            
         }
         filein.close();              // se cierra fichero
@@ -50,9 +50,9 @@ int main(int argc, char *argv[]){
 
     // agregar aristas entre nodos
     int j = 1;
-    for(int i=0; i<vI.size(); i=i+2){
+    for(int i = 0; i<vI.size(); i = i+2){
         g.agregarArista(vI[i], vI[j]);
-        j=j+2;
+        j = j+2;
     }
 
 
